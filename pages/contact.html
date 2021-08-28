@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css" type="text/css">
+    <link rel="icon" href="../images/logo.png" type="image/png type">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        
+
+        <nav>
+            <a href="../index.html" class="logo">            
+                <img src="../images/logo.png" alt="logo" id="logo">
+            </a>
+            <ul class="menu">
+                <li><a href="../pages/news.html" class="menu-link">Noticias</a></li>
+                <li><a href="../pages/characters.html" class="menu-link">Personajes</a</li>
+                <li><a href="../pages/videos.html" class="menu-link">Videos</a></li>
+                <li><a href="../pages/galleries.html" class="menu-link">Galeria</a></li>
+                <li><a href="../pages/contact.html" class="menu-link">Contacto</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+   
+    <h2>Contacta con Rick y Morty</h2>
+
+    <section>
+        <form id="contact" action="" method="GET">
+            <fieldset>
+
+                <label for="GET-name">Nombre:
+                    <input id="GET-name" type="text" name="name" autocomplete="name" placeholder="Rick Sanchez" required/>
+                </label><br>
+
+                <label for="GET-mail">E-mail:
+                    <input type="email" name="mail" id="GET-mail" autocomplete="email" placeholder="rick.sanchez@adultswim.com" required/>
+                </label><br>
+
+                <label for="GET-country">Pais:
+                    <input list="countries" name="country" id="GET-country" autocomplete="country-name" placeholder="Universo C-137" required/>
+                    <datalist id="countries">
+                        <option value="Argentina"></option>
+                        <option value="Bolivia"></option>
+                        <option value="Brasil"></option>
+                        <option value="Chile"></option>
+                        <option value="Colombia"></option>
+                        <option value="Costa Rica"></option>
+                        <option value="Cuba"></option>
+                        <option value="Ecuador"></option>
+                        <option value="El Salvador"></option>
+                        <option value="Guatemala"></option>
+                        <option value="Honduras"></option>
+                        <option value="Mexico"></option>
+                        <option value="Nicaragua"></option>
+                        <option value="Panama"></option>
+                        <option value="Paraguay"></option>
+                        <option value="Peru"></option>
+                        <option value="Puerto Rico"></option>
+                        <option value="Republica Dominicana"></option>
+                        <option value="Uruguay"></option>
+                        <option value="Venezuela"></option>
+                    </datalist>
+                </label><br>
+                
+                <label for="GET-commentary">Comentarios: 
+                    <textarea name="commentary" cols="28" rows="8" placeholder="Haces muchas preguntas, Morty. No resulta muy carismático." required></textarea>
+                </label><br>
+
+                <label for="GET-accept">¡Wubba Lubba Dub Dub! 
+                    <input type="checkbox" name="accept" required/>
+                </label>
+                
+                <label for="GET-reset">
+                    <input type="reset">
+                </label><br><br>
+
+                <label for="GET-submit">
+                    <input type="submit">
+                </label>
+
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <a href="aboutus.html">Acerca de...<br></a>
+        <a href="contact.html">Información de contacto<br></a>
+        <a href="https://www.facebook.com/RickandMorty" target="_blank">FACEBOOK</a>
+        <a href="https://www.youtube.com/watch?v=8Jd0I5MIZVQ&list=PLQl8zBB7bPvL6GycjAtAibVp6FsLWvMcY" target="_blank">YOUTUBE</a>
+        <a href="https://www.instagram.com/rickandmorty" target="_blank">INSTAGRAM</a>
+        <a href="https://www.pinterest.com/search/pins/?q=rick%20and%20morty&rs=typed&term_meta[]=rick%20and%20morty%7Ctyped" target="_blank">PINTEREST</a>
+        <a href="https://twitter.com/rickymortytv" target="_blank">TWITTER</a>
+    </footer>
+</body>
+</html>
