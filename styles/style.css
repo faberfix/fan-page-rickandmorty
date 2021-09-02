@@ -2,6 +2,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }    
 
 
@@ -14,6 +15,9 @@
 
     --clr-bkg-header: rgba(18,59,73,0.5);
     --clr-bkg-header-contrast: #43879c;
+
+    --clr-bkg-footer: rgba(0, 25, 34, 0.5);
+    --clr-bkg-footer-contrast: #1d3c46;
 
     --clr-font: #02aec8;
     --clr-font-p: #02CA5F;
@@ -72,9 +76,8 @@ body{
 
 /* <<<--- encabezado --->>> */
 header{
-    font-family: monospace;    
-    background: linear-gradient(180deg, var(--clr-bkg-body) 0%, var(--clr-bkg-header) 50%, var(--clr-bkg-body) 100%);
-    height: 70px;
+      
+    background: linear-gradient(180deg, var(--clr-bkg-body) 0%, var(--clr-bkg-header) 50%, var(--clr-bkg-body) 100%);  
     width: 100%;
     padding: 10px;
     position:absolute;
@@ -96,7 +99,6 @@ a{
 #logo {
     width: 70px;
     height: 70px;
-    position: absolute;
 }
 
 .logo{
@@ -110,6 +112,7 @@ a{
 }
 
 .menu-link{
+    font-family: monospace;  
     color: white;
     font-weight: bold; 
     font-size: 18px;
@@ -122,14 +125,15 @@ a{
 }
 
 .menu-link:hover{
-    background: linear-gradient(180deg, var(--clr-bkg-body) 0%, var(--clr-bkg-header-contrast) 50%, var(--clr-bkg-body) 100%);
+    background: var(--clr-bkg-header-contrast);
     transition: 1s;
-   
+ 
 }
 
 
 /* <<<--- contenido principal --->>> */
 main {
+    display: flex;
     justify-content: center;
     margin: 50px;
 }
@@ -149,6 +153,21 @@ main {
     100%{
         transform: scale(.75);
     }
+}
+
+/* <<<--- footer --->>> */
+footer{
+    display: flex;
+    justify-content:space-around;
+
+    background: var(--clr-bkg-footer);
+   
+    width: 100%;
+    height: 1fr;
+    padding: 10px;
+    margin-top: 30px;
+    position:absolute;
+    left:0;
 }
 
 
