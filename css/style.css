@@ -132,7 +132,7 @@ a{
     background: var(--clr-bkg-header-contrast);
     transition: 1s;
     cursor: pointer;
-    
+    color: white;
 }
 
 
