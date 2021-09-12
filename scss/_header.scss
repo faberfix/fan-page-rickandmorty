@@ -1,0 +1,29 @@
+/* <<<--- encabezado --->>> */
+header{
+    background: linear-gradient(180deg, $clr-bkg-body 0%, $clr-bkg-header 50%, $clr-bkg-body 100%);  
+    transition: 3.12s;
+    z-index: 1;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+}
+
+.logo{
+    padding: 0 30px;
+}
+
+.menu-link{  
+    font-size: 1.1rem;
+    margin: 1.1rem;
+    line-height: 4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;  
+}
+
+.menu-link:hover{
+    background: $clr-bkg-header-contrast;
+    transition: 1s;
+    cursor: pointer; 
+}

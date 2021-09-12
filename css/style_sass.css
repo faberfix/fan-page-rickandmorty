@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* <<<---colores--->>> */
+/* <<<---fuentes--->>> */
+@font-face {
+  font-family: 'Schwify';
+  src: url(../fonts/get_schwifty.ttf); }
+
+@font-face {
+  font-family: 'Georama';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/georama/v1/MCo5zAn438bIEyxFf6swMnNpvPcUwW4u4yRcDh-ZjxApn9K5GvgdngEK.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* <<<--- footer --->>> */
+footer {
+  background: rgba(0, 25, 34, 0.89); }
+
+a:hover {
+  transform: scale(1.03); }
+
+/* <<<--- encabezado --->>> */
+header {
+  background: linear-gradient(180deg, black 0%, rgba(18, 59, 73, 0.5) 50%, black 100%);
+  transition: 3.12s;
+  z-index: 1; }
+
+#logo {
+  width: 70px;
+  height: 70px; }
+
+.logo {
+  padding: 0 30px; }
+
+.menu-link {
+  font-size: 1.1rem;
+  margin: 1.1rem;
+  line-height: 4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px; }
+
+.menu-link:hover {
+  background: #43879c;
+  transition: 1s;
+  cursor: pointer; }
+
+/* <<<--- títulos y parrafos --->>> */
+h1 {
+  font-family: schwify;
+  color: #02aec8;
+  text-shadow: 10px 5px 1px #000, 0 0.5em 0.5em #0e523d, 0.5em 0 0.5em #1ea138; }
+
+/* <<<---configuración del cuerpo de la página---> */
+body {
+  background-color: black;
+  /* por si no carga background-image */
+  font-family: georema;
+  background-image: url(https://media.giphy.com/media/l3q2sLRa7XYfVRq8w/giphy.gif);
+  height: 100vh; }
+
+/* <<<--- contenido principal --->>> */
+#pickle-rick {
+  animation: heart-beat 0.87s infinite;
+  cursor: pointer;
+  width: 352px;
+  height: 450px; }
+
+@keyframes heart-beat {
+  0% {
+    transform: scale(0.75); }
+  50% {
+    transform: scale(0.8); }
+  100% {
+    transform: scale(0.75); } }

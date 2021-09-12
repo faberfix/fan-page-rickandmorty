@@ -1,0 +1,25 @@
+{
+  "name": "rick-and-morty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style_sass.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faberfix/fan-page-rickandmorty.git"
+  },
+  "author": "Fabricio Mastrocola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faberfix/fan-page-rickandmorty/issues"
+  },
+  "homepage": "https://github.com/faberfix/fan-page-rickandmorty#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
