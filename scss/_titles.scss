@@ -1,10 +1,25 @@
 /* <<<--- títulos y parrafos --->>> */
-h1{
-    font-family: schwify;
-    color:$clr-font;
-    
-    text-shadow: 
-    10px 5px 1px $clr-font-shadowa, 
-    0 0.5em 0.5em $clr-font-shadowb, 
-    0.5em 0 0.5em $clr-font-shadowc;
+@for $i from 1 to 5{
+    h#{$i} {
+        font-family: schwify;
+        color: $clr-font;
+                
+        text-shadow: 
+        1px 5px 1px $clr-font-shadowa, 
+        0 0.5em 0.5em $clr-font-shadowb, 
+        0.5em 0 0.5em $clr-font-shadowc;
+
+        @if $i >= 3{
+            font-family: georema;
+            font-size: 3em;
+            
+        }
+    }
+}
+
+p{
+    color: $clr-font-p;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.4em;
 }

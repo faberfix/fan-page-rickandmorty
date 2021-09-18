@@ -1,54 +1,14 @@
-/* <<<---colores--->>> */ 
-$clr-bkg-body: black;
-$clr-bkg-header: rgba(18,59,73,0.5);
-$clr-bkg-header-contrast: #43879c;
-$clr-bkg-footer: rgba(0, 25, 34, 0.89);
-$clr-bkg-footer-contrast: #1d3c46;
-$clr-font: #02aec8;
-$clr-font-p: #02CA5F;
-$clr-font-shadowa: #000;
-$clr-font-shadowb: #0e523d;
-$clr-font-shadowc: #1ea138;
-$clr-font-shadowd:#fff;
-$clr-font-shadowe:rgb(55, 0, 128);
-$clr-font-shadowf:rgb(175, 0, 175); 
-$bkg-img: url(https://media.giphy.com/media/l3q2sLRa7XYfVRq8w/giphy.gif);
-$logo-width: 352px;
-$logo-height: 450px;
-
+@import "vars";
 @import "fonts";
-@import "footer";
-@import "header";
+@import "index";
 @import "titles";
+@import "header";
+@import "footer";
+@import "contact";
 
 
-/* <<<---configuración del cuerpo de la página---> */
-body{
-    background-color: $clr-bkg-body; /* por si no carga background-image */
-    font-family: georema;   
-    background-image: $bkg-img;
-    height: 100vh;
-}
 
 
-/* <<<--- contenido principal --->>> */
-#pickle-rick{
-    animation: heart-beat 0.87s infinite;
-    cursor: pointer;
-    width: $logo-width;
-    height: $logo-height;
-}
 
-@keyframes heart-beat{
-    0%{
-        transform: scale(.75);
-    }
-    50%{
-        transform: scale(.8);
-    }
-    100%{
-        transform: scale(.75);
-    }
-}
 
 

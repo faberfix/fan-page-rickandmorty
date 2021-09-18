@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* <<<---colores--->>> */
+/* <<<---variables--->>> */
 /* <<<---fuentes--->>> */
 @font-face {
   font-family: 'Schwify';
@@ -22,12 +22,65 @@
   src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
-/* <<<--- footer --->>> */
-footer {
-  background: rgba(0, 25, 34, 0.89); }
+/* <<<---configuración inicial ---> */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-a:hover {
-  transform: scale(1.03); }
+/* <<<---configuración del cuerpo de la página---> */
+body {
+  background-color: black;
+  /* por si no carga background-image */
+  font-family: georema;
+  background-image: url(https://media.giphy.com/media/l3q2sLRa7XYfVRq8w/giphy.gif);
+  height: 100vh; }
+
+/* <<<--- index --->>> */
+#pickle-rick {
+  width: 352px;
+  height: 450px;
+  animation: heart-beat 0.87s infinite;
+  cursor: pointer; }
+
+@keyframes heart-beat {
+  from {
+    transform: scale(0.75); }
+  12% {
+    transform: scale(0.8); }
+  to {
+    transform: scale(0.75); } }
+
+/* <<<--- títulos y parrafos --->>> */
+h1 {
+  font-family: schwify;
+  color: #02aec8;
+  text-shadow: 1px 5px 1px #000, 0 0.5em 0.5em #0e523d, 0.5em 0 0.5em #1ea138; }
+
+h2 {
+  font-family: schwify;
+  color: #02aec8;
+  text-shadow: 1px 5px 1px #000, 0 0.5em 0.5em #0e523d, 0.5em 0 0.5em #1ea138; }
+
+h3 {
+  font-family: schwify;
+  color: #02aec8;
+  text-shadow: 1px 5px 1px #000, 0 0.5em 0.5em #0e523d, 0.5em 0 0.5em #1ea138;
+  font-family: georema;
+  font-size: 3em; }
+
+h4 {
+  font-family: schwify;
+  color: #02aec8;
+  text-shadow: 1px 5px 1px #000, 0 0.5em 0.5em #0e523d, 0.5em 0 0.5em #1ea138;
+  font-family: georema;
+  font-size: 3em; }
+
+p {
+  color: #02CA5F;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.4em; }
 
 /* <<<--- encabezado --->>> */
 header {
@@ -54,31 +107,16 @@ header {
   transition: 1s;
   cursor: pointer; }
 
-/* <<<--- títulos y parrafos --->>> */
-h1 {
-  font-family: schwify;
-  color: #02aec8;
-  text-shadow: 10px 5px 1px #000, 0 0.5em 0.5em #0e523d, 0.5em 0 0.5em #1ea138; }
+/* <<<--- footer --->>> */
+footer {
+  background: rgba(0, 25, 34, 0.89); }
 
-/* <<<---configuración del cuerpo de la página---> */
-body {
-  background-color: black;
-  /* por si no carga background-image */
-  font-family: georema;
-  background-image: url(https://media.giphy.com/media/l3q2sLRa7XYfVRq8w/giphy.gif);
-  height: 100vh; }
+a:hover {
+  transform: scale(1.03); }
 
-/* <<<--- contenido principal --->>> */
-#pickle-rick {
-  animation: heart-beat 0.87s infinite;
-  cursor: pointer;
-  width: 352px;
-  height: 450px; }
-
-@keyframes heart-beat {
-  0% {
-    transform: scale(0.75); }
-  50% {
-    transform: scale(0.8); }
-  100% {
-    transform: scale(0.75); } }
+/* <<<--- formulario --->>> */
+#contact {
+  font-family: georama;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: #02aec8; }
