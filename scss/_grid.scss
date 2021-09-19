@@ -1,0 +1,36 @@
+/* <<<--- grid --->>> */
+.container{
+    margin-top: 99px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-auto-flow: dense;
+    gap: 23px;
+    padding: 23px;  
+}
+
+
+img{
+    max-width: 100%;
+}
+
+@media (min-width: 600px){
+    .container-gallery-item:nth-child(3n+4){
+        grid-column: span 2;
+    }
+    .grid-columns{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.container-character-item img{
+    @include sizes(80vh, 65vh);
+}
+
+.container-gallery-item img{
+    border-radius: 3.14%;
+}
+
+.container-gallery-item:hover, .container-character-item:hover{
+    transform: scale(1.03);
+    
+}

@@ -1,0 +1,11 @@
+/* <<<--- videos --->>> */
+.video{
+    @include sizes(100%, 60vh);
+    margin-top: 60px;
+
+    box-shadow:
+    0px 0px 15px $clr-font-shadowd, 
+    0 0 2.3em $clr-font-shadowe,
+    0 0 0.5em $clr-font-shadowf;
+    
+}
