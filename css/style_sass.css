@@ -155,3 +155,6 @@ img {
   height: 60vh;
   margin-top: 60px;
   box-shadow: 0px 0px 15px #fff, 0 0 2.3em #370080, 0 0 0.5em #af00af; }
+
+.bg-black {
+  background-color: black; }
