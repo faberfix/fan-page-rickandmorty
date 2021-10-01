@@ -22,6 +22,14 @@
   src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.googleapis.com/css2?family=Rubik&display=swap) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
 /* <<<---configuración inicial ---> */
 * {
   margin: 0;
@@ -66,21 +74,14 @@ h3 {
   font-family: schwify;
   color: #02aec8;
   text-shadow: 1px 5px 1px #000, 0 0.5em 0.5em #0e523d, 0.5em 0 0.5em #1ea138;
-  font-family: georema;
-  font-size: 3em; }
-
-h4 {
-  font-family: schwify;
-  color: #02aec8;
-  text-shadow: 1px 5px 1px #000, 0 0.5em 0.5em #0e523d, 0.5em 0 0.5em #1ea138;
-  font-family: georema;
-  font-size: 3em; }
+  font-family: 'Georama';
+  text-shadow: none; }
 
 p {
   color: #02CA5F;
   font-weight: bold;
   font-size: 1.2em;
-  line-height: 1.4em; }
+  font-family: 'Roboto'; }
 
 /* <<<--- encabezado --->>> */
 header {
@@ -132,11 +133,9 @@ a:hover {
 img {
   max-width: 100%; }
 
-@media (min-width: 600px) {
+@media (min-width: 640px) {
   .container-gallery-item:nth-child(3n+4) {
-    grid-column: span 2; }
-  .grid-columns {
-    grid-template-columns: 1fr 1fr 1fr; } }
+    grid-column: span 2; } }
 
 .container-character-item img {
   width: 80vh;
@@ -146,7 +145,7 @@ img {
   border-radius: 3.14%; }
 
 .container-gallery-item:hover, .container-character-item:hover {
-  transform: scale(1.03); }
+  transform: scale(1.01); }
 
 /* <<<--- videos --->>> */
 .video {

@@ -12,12 +12,9 @@ img{
     max-width: 100%;
 }
 
-@media (min-width: 600px){
+@media (min-width: 640px){
     .container-gallery-item:nth-child(3n+4){
         grid-column: span 2;
-    }
-    .grid-columns{
-        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -30,6 +27,6 @@ img{
 }
 
 .container-gallery-item:hover, .container-character-item:hover{
-    transform: scale(1.03);
+    transform: scale(1.01);
     
 }

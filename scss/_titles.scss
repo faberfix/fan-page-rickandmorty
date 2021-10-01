@@ -1,6 +1,7 @@
 /* <<<--- títulos y parrafos --->>> */
-@for $i from 1 to 5{
+@for $i from 1 to 4{
     h#{$i} {
+        
         font-family: schwify;
         color: $clr-font;
                 
@@ -9,11 +10,12 @@
         0 0.5em 0.5em $clr-font-shadowb, 
         0.5em 0 0.5em $clr-font-shadowc;
 
-        @if $i >= 3{
-            font-family: georema;
-            font-size: 3em;
+        @if $i == 3{
+            font-family: 'Georama';
+            text-shadow: none;
             
         }
+        
     }
 }
 
@@ -21,5 +23,5 @@ p{
     color: $clr-font-p;
     font-weight: bold;
     font-size: 1.2em;
-    line-height: 1.4em;
+    font-family: 'Roboto';
 }
