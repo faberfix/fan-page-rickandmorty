@@ -112,14 +112,14 @@ header {
 footer {
   background: rgba(0, 25, 34, 0.89); }
 
-a:hover {
-  transform: scale(1.03); }
+a:hover, .socials:hover {
+  transform: scale(1.09); }
 
 /* <<<--- formulario --->>> */
 #contact {
-  font-family: georama;
+  font-family: Georama;
   text-transform: uppercase;
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: #02aec8; }
 
 /* <<<--- grid --->>> */
@@ -145,7 +145,7 @@ img {
   border-radius: 3.14%; }
 
 .container-gallery-item:hover, .container-character-item:hover {
-  transform: scale(1.01); }
+  transform: scale(1.02); }
 
 /* <<<--- videos --->>> */
 .video {

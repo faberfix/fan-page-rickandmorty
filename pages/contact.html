@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
 
             <div class="container-fluid font-monospace text-uppercase fw-bold">
-                <a href="../index.html" class="logo container-gallery-item navbar-brand">            
+                <a href="../index.html" class="logo socials navbar-brand">            
                     <img src="../images/logo.png" alt="logo" id="logo">
                 </a>
                 
@@ -45,20 +45,20 @@
    
     <h2 class="display-1 text-center m-5">Contacta con Rick y Morty</h2>
 
-    <div class="container">
+    <div class="container my-5">
         
         <form action="" method="GET" id="contact">
             
-            <div class="form-group p-3">
-                <label for="GET-name">Nombre:</label>
+            <div class="form-group">
+                <label for="GET-name">Nombre</label>
                 <input class="form-control" id="GET-name" type="text" name="name" autocomplete="name" placeholder="Rick Sanchez" required/>
                 
     
-                <label for="GET-mail">E-mail:</label>
+                <label for="GET-mail">E-mail</label>
                 <input class="form-control" id="GET-mail" type="email" name="mail" autocomplete="email" placeholder="rick.sanchez@adultswim.com" required/>
                 
 
-                <label for="GET-country" class="from-label">Pais:</label>
+                <label for="GET-country" class="from-label">Pais</label>
                 <input class="form-control" id="GET-country" name="country" list="countries" autocomplete="country-name" placeholder="Universo C-137" required/>
                 <datalist id="countries">
                     <option value="Argentina"></option>
@@ -84,26 +84,20 @@
                 </datalist>
             </div>
 
-            <div class="form-group p-3">
-                <label for="GET-commentary">Comentarios:</label>
+            <div class="form-group p-2">
+                <label for="GET-commentary">Mensaje</label>
                 <textarea class="form-control" name="commentary" cols="28" rows="8" placeholder="Haces muchas preguntas, Morty. No resulta muy carismático." required></textarea>    
             </div>
 
-            <div class="form-group p-2">
+            <div class="form-group text-center">
                 <label for="GET-accept">¡Wubba Lubba Dub Dub!</label>
                 <input type="checkbox" name="accept" required/>
+
+                <label for="GET-submit"></label>
+                <button class="btn btn-primary btn-lg">Enviar</button>
             </div>
 
             
-            <div class="form-group p-2">
-                <label for="GET-reset"></label>
-                <input type="reset">
-            </div>
-
-            <div class="form-group p-3">
-                <label for="GET-submit"></label>
-                <button class="btn btn-primary">Enviar</button>
-            </div>
                        
         </form>
     </div>
@@ -114,11 +108,11 @@
             <a class="menu-link text-decoration-none text-white" href="../pages/contact.html">Información de contacto</a>
         </div>
         <ul class="list-unstyled list-inline d-flex justify-content-around p-2">
-            <li class="container-gallery-item list-inline-item"><a href="https://www.facebook.com/RickandMorty" target="_blank"><img src="../images/socials/icons-facebook.png" alt="facebook"></a></li>
-            <li class="container-gallery-item list-inline-item"><a href="https://www.youtube.com/watch?v=8Jd0I5MIZVQ&list=PLQl8zBB7bPvL6GycjAtAibVp6FsLWvMcY" target="_blank"><img src="../images/socials/icons-youtube.png" alt="youtube"></a></li>
-            <li class="container-gallery-item list-inline-item"><a href="https://www.instagram.com/rickandmorty" target="_blank"><img src="../images/socials/icons-instagram.png" alt="instragram"></a></li>
-            <li class="container-gallery-item list-inline-item"><a href="https://www.pinterest.com/search/pins/?q=rick%20and%20morty&rs=typed&term_meta[]=rick%20and%20morty%7Ctyped" target="_blank"><img src="../images/socials/icons-pinterest.png" alt="pinterest"></a></li>
-            <li class="container-gallery-item list-inline-item"><a href="https://twitter.com/rickymortytv" target="_blank"><img src="../images/socials/icons-twitter.png" alt="twitter"></a></li>
+            <li class="socials list-inline-item"><a href="https://www.facebook.com/RickandMorty" target="_blank"><img src="../images/socials/icons-facebook.png" alt="facebook"></a></li>
+            <li class="socials list-inline-item"><a href="https://www.youtube.com/watch?v=8Jd0I5MIZVQ&list=PLQl8zBB7bPvL6GycjAtAibVp6FsLWvMcY" target="_blank"><img src="../images/socials/icons-youtube.png" alt="youtube"></a></li>
+            <li class="socials list-inline-item"><a href="https://www.instagram.com/rickandmorty" target="_blank"><img src="../images/socials/icons-instagram.png" alt="instragram"></a></li>
+            <li class="socials list-inline-item"><a href="https://www.pinterest.com/search/pins/?q=rick%20and%20morty&rs=typed&term_meta[]=rick%20and%20morty%7Ctyped" target="_blank"><img src="../images/socials/icons-pinterest.png" alt="pinterest"></a></li>
+            <li class="socials list-inline-item"><a href="https://twitter.com/rickymortytv" target="_blank"><img src="../images/socials/icons-twitter.png" alt="twitter"></a></li>
         </ul>
     </footer>
 
